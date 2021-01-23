@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="paneToptanci" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="632.0" style="-fx-background-color: #ffbaba;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Toptanci">
+   <children>
+      <TextField fx:id="txtfirma" layoutX="145.0" layoutY="70.0" />
+      <TextField fx:id="txtmali" layoutX="145.0" layoutY="102.0" />
+      <TextField fx:id="txtmiktar" layoutX="145.0" layoutY="132.0" />
+      <TextField fx:id="txtcins" layoutX="145.0" layoutY="166.0" />
+      <TextField fx:id="txtfiyat" layoutX="145.0" layoutY="200.0" />
+      <Label layoutX="40.0" layoutY="74.0" text="Toptanci Firmasi" textFill="#5bc3ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="106.0" text="Toptanci Mali" textFill="#5bc3ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="136.0" text="Toptanci Miktar" textFill="#5bc3ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="170.0" text="Toptanci Cins" textFill="#5bc3ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="204.0" text="Birim Fiyat" textFill="#5bc3ff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="ekle" layoutX="341.0" layoutY="166.0" mnemonicParsing="false" onAction="#btnekle" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: #ff5f5f;" text="Ekle" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="sil" layoutX="341.0" layoutY="201.0" mnemonicParsing="false" onAction="#btnsil" prefHeight="29.0" prefWidth="66.0" style="-fx-background-color: #ff5f5f;" text="Sil" textFill="WHITE">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableview" layoutX="56.0" layoutY="248.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="T_Firmasi" prefWidth="101.0" text="T_Firmasi" />
+            <TableColumn fx:id="T_Mali" prefWidth="126.0" text="T_Mali" />
+            <TableColumn fx:id="T_Miktar" prefWidth="114.0" text="T_Miktar" />
+            <TableColumn fx:id="T_Cins" prefWidth="120.0" text="T_Cins" />
+            <TableColumn fx:id="T_Fiyat" prefWidth="82.0" text="T_Fiyat" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

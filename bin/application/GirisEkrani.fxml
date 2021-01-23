@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="paneGiris" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="678.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GirisEkranı">
+   <children>
+      <ImageView fitHeight="234.0" fitWidth="228.0" layoutX="205.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/security.gif" />
+         </image>
+      </ImageView>
+      <Pane layoutX="361.0" layoutY="116.0" prefHeight="342.0" prefWidth="286.0" style="-fx-background-color: #ffffff;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <Text layoutX="76.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giris Ekranı">
+               <font>
+                  <Font name="Goudy Old Style" size="23.0" />
+               </font>
+            </Text>
+            <TextField fx:id="adi" layoutX="51.0" layoutY="93.0" prefHeight="29.0" prefWidth="189.0" promptText="Kullanıcı Adı">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </TextField>
+            <Button layoutX="51.0" layoutY="190.0" mnemonicParsing="false" onAction="#eventgiris" prefHeight="29.0" prefWidth="189.0" style="-fx-background-color: #74ff99;" text="Giris" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="51.0" layoutY="230.0" mnemonicParsing="false" onAction="#eventuyeol" prefHeight="29.0" prefWidth="189.0" style="-fx-background-color: #74ff99;" text="Üye OL" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="sifre" layoutX="51.0" layoutY="142.0" prefHeight="25.0" prefWidth="189.0" promptText="Sifre">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
